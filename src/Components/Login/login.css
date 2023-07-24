@@ -1,0 +1,25 @@
+.homeScreenGrid
+{
+    display: grid;
+    grid-template-rows: 4fr 3.5fr 2.5fr;
+    height: 100vh;
+}
+.banner
+{
+    width: 100vw;
+}
+.footer
+{
+    display: grid;
+    height: auto;
+    width: 100vw;
+    place-items: center;
+}
+.logo
+{
+    width: 35vw;
+}
+.loginForm
+{
+
+}
