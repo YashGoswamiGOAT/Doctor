@@ -1,12 +1,16 @@
 import './App.css';
-
+import Home from "./Components/Home/home";
+import Login from "./Components/Login/login";
+import Account from "./Contexts/account";
+import {useState} from "react";
 function App() {
-    var Logedin = localStorage.getItem('account')!=null
-
+    let [account,setaccount] = useState(localStorage.getItem('account'))
   return (
-    <div className="App">
-      <h1></h1>
-    </div>
+      <Account.Provider value={{}}>
+          <div className="App">
+              {account!=null ? <Home/> : <Login/>}
+          </div>
+      </Account.Provider>
   );
 }
 
