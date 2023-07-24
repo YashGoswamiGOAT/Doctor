@@ -1,9 +1,11 @@
 import './App.css';
 
 function App() {
+    var Logedin = localStorage.getItem('account')!=null
+
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1></h1>
     </div>
   );
 }
