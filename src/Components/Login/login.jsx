@@ -8,6 +8,7 @@ import RouteState from "../../Contexts/route";
 import {Routes,Route} from "react-router";
 import LoginForm from "./LoginForm";
 import SignupForm from "./SignupForm";
+import Verify from "./Verify";
 
 // Finilizing login
 
@@ -22,6 +23,7 @@ export default function Login(){
                     <Routes location={Route_.route}>
                         <Route path={"/login/*"} element={<LoginForm/>}/>
                         <Route path={"/signup/*"} element={<SignupForm/>}/>
+                        <Route path={"/verify/*"} element={<Verify/>}/>
                     </Routes>
                 </div>
                 <div className={'footer'}>

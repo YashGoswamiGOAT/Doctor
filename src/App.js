@@ -12,9 +12,10 @@ function App() {
   return (
       <BrowserRouter>
           <RouteState.Provider value={{route,setroute}}>
-              <Account.Provider value={{}}>
+              <Account.Provider value={{account,setaccount}}>
                   <div className="App">
-                      {account!=null ? <Home/> : <Login/>}
+                      {/*{account!=null ? <Home/> : <Login/>}*/}
+                      <Login/>
                   </div>
               </Account.Provider>
           </RouteState.Provider>
