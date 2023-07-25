@@ -21,5 +21,38 @@
 }
 .loginForm
 {
-
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.loginForm input
+{
+    border: 1px solid #3a3a3a;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50vw;
+}
+.formControll
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 55vw;
+}
+.formControll button{
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background: white;
+    border: 1px solid #ca4a7b;
+    color: #ca4a7b;
+    border-radius: 10px;
+}
+.Left
+{
+    justify-self: start;
+}
+.Right
+{
+    justify-self: end;
 }
